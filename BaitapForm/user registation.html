@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Registraion</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      width: 400px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: auto;
+      border-radius: 5px;
+    }
+    .form-group {
+      margin-bottom: 25px;
+      margin-right: 20px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 3px;
+      margin: 8px 0;
+    }
+    input[type="submit"] {
+      font-size: 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Đăng ký người dùng</h1>
+      <form
+        action="http://demo.codegym.vn/6/registration_form/register.php"
+        method="post"
+      >
+        <div class="form-group">
+          <h3>
+            Họ và tên:
+            <br /><input type="text" ,name="Email" required />
+          </h3>
+
+          <h3>
+            Email:
+            <br /><input type="text" ,name="Email" required />
+          </h3>
+          <h3>
+            Số điện thoại:
+            <br /><input type="tel" ,name="phone" required />
+          </h3>
+          <h3>Giới Tính:</h3>
+          <input type="radio" name="gender" ,value="Nam" />Nam
+          <input type="radio" name="gender" ,value="Nu" />Nữ <br /><br />
+
+          <input type="submit" value="Đăng ký" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
