@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    .basic_form{
+        font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+    }
+</style>
+
+<body>
+
+    <form method="get" action="simpleform.html" class="basic_form">
+        <h2>Order form</h2>
+        <span style="color: red;font-family: Lucida Grande;font-size: 20px;">
+            <p>What would you like buy?</p>
+        </span>
+        <select>
+            <option value="">A</option>
+            <option>B +(0,5$)</option>
+            <option>C+(0,5$)</option>
+        </select>
+        <p>How many would you like to order</p>
+        <input type="radio" name="order" />1-10$<br />
+        <input type="radio" name="order" />2-20$<br />
+        <input type="radio" name="order" />3-25$<br />
+        <h3>Name <span style="color: red">*</span>
+            <!--Span để đánh dấu một phần nhỏ của văn bản  -->
+        </h3>
+        <input type="text" name="firstName" placeholder="Enter your frist name" size="15px" />
+        &nbsp
+        <input type="text" name="lastName" placeholder="Enter your last name" size="15px" />
+        <h3>Email</h3>
+        <input type="text" name="email" size="38px" />
+        <h3>Phone Number</h3>
+        <input type="text" name="phoneNumber1" size="5px">
+        <input type="text" name="phoneNumber2" size="5px">
+        <input type="text" name="phoneNumber3" size="5px"><br/><br/>
+        <input type="submit" value="Submit" name="submit">
+    </form>
+
+
+</body>
+
+</html>
