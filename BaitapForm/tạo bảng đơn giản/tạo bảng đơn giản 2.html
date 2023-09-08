@@ -2,61 +2,58 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Tạo bảng đơn giản 2</title>
+    <title>Thời Khóa Biểu</title>
     <style>
-      * {
-        margin: 0;
-        box-sizing: border-box;
+      body {
+        font-family: Arial, sans-serif;
+        color: blue;
+        margin: auto;
       }
 
       h1 {
-        font-size: 32px;
-        font-family: Arial, sans-serif;
-        color: blue;
+        font-size: 24px;
         text-align: center;
-      }
-
-      body > div {
-        font-family: Arial, sans-serif;
-        color: blue;
-        display: flex;
-        justify-content: space-between;
-      }
-
-      body > div > div {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
       }
 
       table {
-        width: 800px;
+        margin: 0 auto;
+        border-collapse: collapse;
+        width: 80%;
+      }
+      body > div > div {
+        display: flex;
       }
 
-      table,
       th,
       td {
-        border-collapse: collapse;
-        border: solid 2px gray;
-      }
-
-      th {
+        border: 2px solid gray;
+        padding: 8px;
         text-align: center;
       }
 
-      th,
-      td {
-        padding: 8px;
+      th {
+        background-color: #ffff00;
       }
+
       tr:nth-child(2) {
         background-color: #ffcc00;
+      }
+
+      .info {
+        margin: 20px auto;
+        display: flex;
+        width: 800px;
+        justify-content: space-between;
+      }
+      .info div {
+        flex-direction: column;
       }
     </style>
   </head>
   <body>
-    <h1 style="width: 800px">THỜI KHÓA BIỂU</h1>
+    <h1>THỜI KHÓA BIỂU</h1>
 
-    <div style="width: 800px; padding: 15px 50px 5px">
+    <div style="width: 800px; padding: 20px 50px 5px" class="info">
       <div>
         <p>Lớp: C0823H1</p>
         <p>Giáo viên: Nguyễn Bá Minh Đạo</p>
@@ -71,18 +68,16 @@
     <table>
       <tr>
         <th colspan="3"></th>
-        <th style="background-color: #ffff00">Thứ 3</th>
-        <th style="background-color: #ffff00">Thứ 5</th>
-        <th style="background-color: #ffff00">Thứ 7</th>
+        <th>Thứ 3</th>
+        <th>Thứ 5</th>
+        <th>Thứ 7</th>
       </tr>
-
       <tr>
         <th>Tuần</th>
         <th>Ngày bắt đầu</th>
         <th>Ngày kết thúc</th>
         <th colspan="3">Môn học</th>
       </tr>
-
       <tr>
         <td>01</td>
         <td>02/09/2023</td>
