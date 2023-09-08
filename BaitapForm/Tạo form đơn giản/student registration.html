@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tạo form đơn giản (phần 2)</title>
+    <style>
+      body {
+        margin: auto;
+        font-family: Arial, sans-serif;
+      }
+
+      form {
+        background-color: #fdfba8;
+        width: 600px;
+        padding: 8px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        color: blue;
+        font-size: 24px;
+        font-weight: 600;
+        background-color: #d3fbd5;
+        padding: 3px;
+        text-align: center;
+      }
+
+      td:nth-child(1) {
+        width: 120px;
+      }
+
+      td {
+        padding: 3px;
+      }
+      .hobby {
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="student registration.html" method="post">
+      <h1>ĐĂNG KÝ HỌC VIÊN</h1>
+
+      <table>
+        <tbody class="hobby">
+          <tr>
+            <td>
+              <label for="name" style="color: blue">Họ và tên</label>
+            </td>
+            <td>
+              <input type="text" id="name" name="name" value="" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="birthday" style="color: blue">Ngày sinh</label>
+            </td>
+            <td>
+              <input type="date" id="birthday" name="birthday" value="" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <span style="color: blue">Giới tính</span>
+            </td>
+            <td>
+              <input type="radio" id="gender1" name="gender" value="Nam" />
+              <label for="gender1">Nam</label>
+
+              <input type="radio" id="gender2" name="gender" value="Nữ" />
+              <label for="gender2">Nữ</label>
+            </td>
+          </tr>
+        </tbody>
+        <tr>
+          <td>
+            <span style="color: blue">Địa chỉ</span>
+          </td>
+          <td>
+            <textarea name="" id="address" cols="30" rows="3"></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="class" style="color: blue">Lớp</label>
+          </td>
+          <td>
+            <select name="class" id="class">
+              <option value="">-Chọn lớp-</option>
+              <option value="A1">Lớp A1</option>
+              <option value="A2">Lớp A2</option>
+              <option value="A3">Lớp A3</option>
+              <option value="A4">Lớp A4</option>
+              <option value="A5">Lớp A5</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="email" style="color: blue">Email</label>
+          </td>
+          <td>
+            <input type="text" id="email" name="email" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="phone" style="color: blue">Điện thoại</label>
+          </td>
+          <td>
+            <input type="number" id="phone" name="phone" />
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="Đăng ký" />
+            <input type="reset" value="Nhập lại" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
